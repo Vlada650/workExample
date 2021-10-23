@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'CothamSans';
+    src: url(/assets/fonts/CothamSans/CothamSans.woff) format('woff'),
+        url(/assets/fonts/CothamSans/CothamSans.ttf) format('truetype')
+}
+
+body {
+    font-family: CothamSans, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.content-link {
+    font-size: 30px;
+    color: #FD4300;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 70vh;
+    padding-top: 7vw;
+    padding-bottom: 20vh;
+}
+
+.content__text-text1 {
+    padding-top: 20px;
+    font-size: 30px;
+}
+
+.content__text-text2 {
+    padding-top: 10px;
+    font-size: 20px;
+    color: #8E8E8E;
+}
+
+.content__text-text3 {
+    display: block;
+    padding-top: 30px;
+    font-size: 30px;
+    color: #FD4300;
+}

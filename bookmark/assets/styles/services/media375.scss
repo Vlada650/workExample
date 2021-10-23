@@ -1,0 +1,70 @@
+@media screen and (max-width: 375px) {
+
+    .footer,
+    .header__left-block-description {
+        display: none;
+    }
+
+    .header {
+        justify-content: space-around;
+        height: 50px;
+    }
+
+    .header__left-block {
+        margin-left: 5px;
+    }
+
+    .header__left-block-logo {
+        font-size: 20px;
+        padding-bottom: 5px;
+    }
+
+    .header__right-block {
+        display: flex;
+        align-items: center;
+    }
+
+    .header__right-block-search {
+        font-size: 12px;
+    }
+
+    .header__right-block-openinfo {
+        font-size: 12px;
+    }
+
+    .header__right-block-search-img,
+    .header__right-block-openinfo-img {
+        padding-right: 15px;
+        padding-left: 3px;
+        padding-top: 5px;
+    }
+
+    .header__right-block-language {
+        width: 10px;
+        margin-right: 20px;
+    }
+
+    .russian-version {
+        font-size: 12px;
+    }
+
+    .english-version {
+        font-size: 12px;
+    }
+
+    .navigation {
+        height: 30px;
+        padding-left: 5px;
+    }
+
+    .navigation__menu {
+        font-size: 14px;
+    }
+
+    .navigation__menu_active {
+        color: #1d1d1d;
+        line-height: 1.8;
+    }
+
+
+}

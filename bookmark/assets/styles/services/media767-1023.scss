@@ -1,0 +1,15 @@
+@media (min-width: 768px) and (max-width: 1023px) {
+    .navigation {
+        padding-left: 20px;
+    }
+
+
+    .navigation__menu_hidden-md {
+        display: none;
+    }
+
+    .header__left-block {
+        display: flex;
+        padding-left: 61px;
+    }
+}

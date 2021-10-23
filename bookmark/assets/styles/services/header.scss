@@ -1,0 +1,82 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    border-bottom: 1px solid #F3F3F3;
+    align-items: center;
+    font-family: CothamSans;
+}
+
+.header__left-block {
+    display: flex;
+    padding-left: 61px;
+}
+
+.header__right-block {
+    display: flex;
+    align-items: center;
+}
+
+.header__left-block-logo {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.header__left-block-description {
+    width: 400px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    padding-left: 12px;
+}
+
+.header__right-block-search {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    color: #C1C1C1;
+}
+
+.header__right-block-openinfo {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.header__right-block-search-img {
+    padding-right: 30px;
+    padding-left: 6px;
+    padding-top: 10px;
+}
+
+.header__right-block-openinfo-img {
+    padding-right: 30px;
+    padding-left: 6px;
+    padding-top: 5px;
+}
+
+.header__right-block-language {
+    width: 30px;
+    margin-right: 61px;
+}
+
+.russian-version {
+    text-decoration: none;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    color: #1D1D1D;
+}
+
+.english-version {
+    text-decoration: none;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    color: #C1C1C1;
+}
+
+a {
+    text-decoration: none;
+}

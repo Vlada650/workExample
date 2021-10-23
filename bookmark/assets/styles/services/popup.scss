@@ -1,0 +1,111 @@
+.popup-body {
+    display: grid;
+    grid-template-columns: 5% 1fr 5%;
+    grid-template-rows: 5% 1fr 5%;
+    height: 100vh;
+}
+
+.popup-header {
+    grid-row: 1/2;
+    grid-column: 2/3;
+    margin-top: 5%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    @media screen and (max-width: 375px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.popup-header__name {
+    display: none;
+
+    @media screen and (max-width: 375px) {
+        display: flex;
+        font-size: 30px;
+        line-height: 30px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+}
+
+.popup-footer {
+    grid-row: 3/4;
+    grid-column: 2/3;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-bottom: 5%;
+}
+
+
+.popup-main {
+    display: grid;
+    grid-row: 2/3;
+    grid-column: 2/3;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.6fr 0.25fr 0.15fr;
+    margin: 4% 0 4% 0;
+}
+
+.popup-description {
+    grid-row: 1/2;
+
+}
+
+.popup-desription__instruction-header {
+    font-size: 16px;
+    line-height: 16px;
+    color: #FD4300;
+
+}
+
+.popup-desription__instruction-paragraph {
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #1D1D1D;
+
+
+    @media screen and (max-width: 375px) {
+        font-size: 18px;
+        line-height: 18px;
+    }
+
+    @media screen and (min-width: 376px) and (max-width: 767px) {
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+}
+
+.popup-description__site-author {
+    color: #FD4300;
+}
+
+.popup-quote {
+    grid-row: 2/3;
+    padding-top: 5%;
+}
+
+.popup-quote__text {
+    font-size: 18px;
+    line-height: 18px;
+    color: #1D1D1D;
+}
+
+.popup-quote__author {
+    font-size: 18px;
+    line-height: 18px;
+    color: #C1C1C1;
+
+}
+
+.popup-link {
+    grid-row: 3/4;
+    padding-top: 5%;
+}

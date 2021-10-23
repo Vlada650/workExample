@@ -1,0 +1,26 @@
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    white-space: nowrap;
+    height: 50px;
+    padding-left: 50px;
+    font-family: CothamSans;
+}
+
+.navigation__menu {
+    font-size: 20px;
+    color: #C1C1C1;
+    margin-left: 25px;
+}
+
+.navigation__menu_active {
+    color: #1d1d1d;
+    border-bottom: 2px solid #FD4300;
+    line-height: 1.5;
+    margin-bottom: -6px;
+}
+
+a {
+    text-decoration: none;
+}
