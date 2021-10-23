@@ -1,0 +1,217 @@
+body {
+    padding-top: 1vw;
+    font-family: 'Noto Sans JP', sans-serif;
+    content: "";
+    background: url(https://inform-ua.info/uploads/2021/07/puteshestviya-1625823591.png) no-repeat center center fixed;
+    background-size: cover;
+}
+
+        .background {
+            background-color: rgba(238, 227, 227, 0.6);
+
+        }
+
+        .main-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .main-container__promo {
+            font-size: 40px;
+            font-weight: bold;
+            margin: 10px;
+        }
+
+        .main-container__button {
+            font-size: 40px;
+            background-color: rgb(155, 228, 161);
+            cursor: pointer;
+            padding: 10px 15px;
+            border-radius: 20px;
+            text-transform: uppercase;
+            font-weight: bold;
+            border: none;
+        }
+        .cardContainer__modalWrapper {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, .2);
+            display: flex;
+        }
+
+        .cardContainer__modal {
+            width: 80vw;
+            height: 80vh;
+            background: radial-gradient(circle, rgba(232, 232, 244, 1) 1%, rgb(184 253 197) 42%, rgb(170 253 173) 100%);
+            margin: 3em;
+            border-radius: 4px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+            position: relative;
+            padding: 2em;
+            overflow: auto;
+            font-weight: 600;
+            z-index: -1;
+        }
+
+        .cardContainer__modal label {
+            position: absolute;
+            right: 0;
+            top: 0;
+            font-size: 200%;
+            width: 1em;
+            height: 1em;
+            line-height: 1;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        #openclose,
+        .cardContainer__modalWrapper {
+            display: none;
+        }
+
+        #openclose:checked~.cardContainer__modalWrapper {
+            display: flex;
+        }
+
+        .cardContainer__modal-promo {
+            font-size: 22px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .cardContainer__modal-header {
+            color: #11413d;
+            font-size: 20px;
+            margin: 10px;
+        }
+
+        .cardContainer__modal-userPhoto {
+            height: 14em;
+            width: 16em;
+            padding: 5px;
+        }
+
+        .cardContainer__modal-photo {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .cardContainer__modal-reset {
+            display: flex;
+            justify-content: end;
+        }
+
+        .btn {
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 20px;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: bold;
+            border: none;
+            background-color: rgb(126, 194, 132);
+            color: #0c2e2b;
+        }
+
+        label {
+            display: block;
+            font-weight: 100;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+
+        input {
+            border-radius: 40px;
+            height: 1.2em;
+            padding: 0.5vw 1vw;
+            border: none;
+            background-color: rgb(235 255 237);
+        }
+
+        input:focus {
+            outline: none;
+            border: 1px solid green;
+        }
+
+        #cityError,
+        #stepsError {
+            color: rgb(124, 4, 4);
+            width: max-content;
+        }
+
+        #map {
+            height: 45vh;
+            width: inherit;
+            margin: 10px 0px;
+        }
+
+        @media screen and (min-width: 320px) {
+            .cardContainer__modal-userPhoto {
+                height: 8em;
+                width: 10em;
+            }
+
+            .cardContainer__modal {
+                padding: 20px;
+            }
+
+            input {
+                margin-bottom: 10px;
+            }
+
+            .cardContainer__modal-header {
+                margin: 5px;
+            }
+
+            .btn {
+                font-size: 12px;
+            }
+        }
+
+        @media screen and (min-width: 375px) {
+            .cardContainer__modal-userPhoto {
+                height: 10em;
+                width: 12em;
+            }
+
+            .cardContainer__modal-header {
+                font-size: 18px;
+                margin: 5px;
+            }
+
+            .btn {
+                font-size: 12px;
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            .cardContainer__modal-userPhoto {
+                height: 12em;
+                width: 14em;
+            }
+        }
+
+        @media screen and (min-width: 1024px) {
+            .cardContainer__modal-userPhoto {
+                height: 14em;
+                width: 16em;
+            }
+
+            .cardContainer__modal-header {
+                font-size: 20px;
+                margin: 15px;
+            }
+
+            .btn {
+                font-size: 14px;
+            }
+        }
+

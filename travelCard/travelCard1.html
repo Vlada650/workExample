@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="travel.css">
+    <title>MyJourney</title>
+</head>
+
+<body>
+    <div class="background">
+        <section class="main-container">
+            <div class="main-container__promo">Journey 1</div>
+            <button class="main-container__button">
+                <label for="openclose" id="label">More...</label>
+            </button>
+        </section>
+
+        <div class="cardContainer">
+            <input type="checkbox" class="cardContainer__checkbox" id="openclose">
+            <div class="cardContainer__modalWrapper">
+                <div class="cardContainer__modal">
+                    <label for="openclose" class="cardContainer__modal-label">&times;</label>
+                    <section>
+                        <div class="cardContainer__modal-promo">Tell about your trip!</div>
+                        <p class="cardContainer__modal-header">Visited cities: <span id="visitedCities"></span></p>
+                        <input type="text" id="cities">
+                        <button onclick="saveCities()" class="btn">Save</button>
+                        <button onclick="deleteCities()" class="btn">Delete</button>
+                        <div id="cityError"></div>
+                    </section>
+                    <section>
+                        <p class="cardContainer__modal-header">The best places:</p>
+                        <div class="cardContainer__modal-photo">
+                            <img class="cardContainer__modal-userPhoto"
+                                src="https://uiaa-web.azureedge.net/wp-content/uploads/2021/01/Dolomites-stock-UIAA.jpg"
+                                alt="example1">
+                            <img class="cardContainer__modal-userPhoto"
+                                src="https://uiaa-web.azureedge.net/wp-content/uploads/2021/01/Dolomites-stock-UIAA.jpg"
+                                alt="example2">
+                            <img class="cardContainer__modal-userPhoto"
+                                src="https://uiaa-web.azureedge.net/wp-content/uploads/2021/01/Dolomites-stock-UIAA.jpg"
+                                alt="example3">
+                            <img class="cardContainer__modal-userPhoto"
+                                src="https://uiaa-web.azureedge.net/wp-content/uploads/2021/01/Dolomites-stock-UIAA.jpg"
+                                alt="example4">
+                            <img class="cardContainer__modal-userPhoto"
+                                src="https://uiaa-web.azureedge.net/wp-content/uploads/2021/01/Dolomites-stock-UIAA.jpg"
+                                alt="example5">
+                        </div>
+                    </section>
+                    <section>
+                        <p class="cardContainer__modal-header">Walked steps: <span id="walkedSteps"></span></p>
+                        <input type="text" id="steps">
+                        <button class="btn" onclick="saveSteps()">Save</button>
+                        <button class="btn" onclick="deleteSteps()">Delete</button>
+                        <div id="stepsError"></div>
+                    </section>
+                    <section>
+                        <p class="cardContainer__modal-header">My route:</p>
+                        <div id="map"></div>
+                        <div class="cardContainer__modal-reset"><button onclick="resetRoute()" class="btn">Reset
+                                data</button></div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let stepsNum = localStorage.getItem('stepsNum');
+        let citiesNum = localStorage.getItem('citiesNum');
+
+        document.addEventListener("DOMContentLoaded", function (event) {
+            if (stepsNum != null) {
+                document.getElementById("walkedSteps").innerHTML += `${stepsNum}`;
+            }
+            if (citiesNum != null) {
+                document.getElementById("visitedCities").innerHTML += `${citiesNum}`;
+            }
+        });
+
+        function saveSteps() {
+            let steps = document.getElementById("steps").value;
+            if (localStorage.getItem('stepsNum') == null) {
+                localStorage.setItem('stepsNum', steps);
+            }
+
+            if (steps == "") {
+                document.getElementById("stepsError").innerHTML = "This field cannot be empty"
+            } else {
+                document.getElementById("walkedSteps").innerHTML += `<span>${steps}</span>`;
+                document.getElementById("stepsError").innerHTML = "";
+            }
+            document.getElementById("steps").value = ""
+        }
+
+        function saveCities() {
+            let cities = document.getElementById("cities").value;
+            if (localStorage.getItem('citiesNum') == null) {
+                localStorage.setItem('citiesNum', cities);
+            }
+
+            if (cities == "") {
+                document.getElementById("cityError").innerHTML = "This field cannot be empty"
+            } else {
+                document.getElementById("visitedCities").innerHTML += `<span>${cities}, </span>`;
+                document.getElementById("cityError").innerHTML = "";
+            }
+            document.getElementById("cities").value = "";
+        }
+
+        function deleteCities() {
+            localStorage.removeItem("citiesNum");
+            document.getElementById("visitedCities").innerHTML = "";
+        }
+
+        function deleteSteps() {
+            localStorage.removeItem("stepsNum");
+            document.getElementById("walkedSteps").innerHTML = "";
+        }
+
+    </script>
+    <script>
+        let poly;
+        let marker;
+        let map;
+        let coords;
+        let array = [];
+        function initMap() { /*create a map with lat+lng*/
+            let arrayOfCoords = JSON.parse(localStorage.getItem("arrayOfCoords"));
+            let opt = {
+                center: {
+                    lat: 45.887522, lng: 2.173613
+                },
+                zoom: 6
+            }
+            map = new google.maps.Map(document.getElementById("map"), opt);
+            poly = new google.maps.Polyline({/*define a polylines and their features*/
+                strokeColor: "#000000",
+                strokeOpacity: 0.8,
+                strokeWeight: 2,
+                geodesic: true,
+                path: arrayOfCoords,
+            });
+            poly.setMap(map);
+            map.addListener("click", addLatLng);/*add lat+lng after click*/
+        }
+        function addLatLng(event) {
+            let path = poly.getPath();
+            path.push(event.latLng);/*add in path lat+lng*/
+            marker = new google.maps.Marker({/*create a marker and show it*/
+                position: event.latLng,
+                title: "#" + path.getLength(),
+                map: map,
+                draggable: true,
+            });
+            coords = JSON.stringify(poly.getPath().Be);
+            array = JSON.parse(coords);
+            localStorage.setItem("arrayOfCoords", JSON.stringify(array));
+        }
+
+        function resetRoute() {
+            poly.setMap(null);
+            localStorage.removeItem("arrayOfCoords");
+        }
+    </script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsVQ0F_pHOF5Wnk-bJME7Px4WzSR8gBZk&callback=initMap&libraries=&v=weekly"
+        async defer></script>
+</body>
+
+</html>
