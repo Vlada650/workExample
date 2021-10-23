@@ -2,6 +2,11 @@ body {
   font-family: "Tahoma", sans-serif;
 }
 
+img{
+  width: 150px;
+  height: 250px;
+}
+
 .navbar {
   background-color: #060709;
   height: -webkit-fit-content;
