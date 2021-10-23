@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        @font-face {
+            font-family:CothamSans;
+            src: url(assets/fonts/CothamSans/CothamSans.ttf);
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            height: 60px;
+            border-bottom: 1px solid #F3F3F3;
+            align-items: center;
+            font-family: CothamSans;
+        }
+
+        .header__left-block {
+            display: flex;
+            justify-content: space-around;
+            margin-left: 60px;
+        }
+
+        .header__right-block {
+            display: flex;
+            align-items: center;
+        }
+
+        .header__left-block-logo {
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 400;
+        }
+
+        .header__left-block-description {
+            width: 400px;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            padding-left: 12px;
+        }
+
+        .header__right-block-search {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            color: #C1C1C1;
+        }
+
+        .header__right-block-openinfo {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+        }
+
+        .header__right-block-search-img {
+            padding-right: 30px;
+            padding-left: 6px;
+            padding-top: 10px;
+        }
+
+        .header__right-block-openinfo-img {
+            padding-right: 30px;
+            padding-left: 6px;
+            padding-top: 5px;
+        }
+
+        .header__right-block-language {
+            width: 30px;
+            margin-right: 60px;
+        }
+
+        .russian-version {
+            text-decoration: none;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            color: #1D1D1D;
+        }
+
+        .english-version {
+            text-decoration: none;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            color: #C1C1C1;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header__left-block">
+            <div class="header__left-block-logo">saved</div>
+            <div class="header__left-block-description"> - these are hand-made bookmarks for various services,
+                sites, references, and more for the designer</div>
+        </div>
+        <div class="header__right-block">
+            <div class="header__right-block-search">search</div>
+            <div class="header__right-block-search-img">
+                <img src="assets/images/search.svg" alt="search">
+            </div>
+            <div class="header__right-block-openinfo">open info</div>
+            <div class="header__right-block-openinfo-img">
+                <a href="@"><img src="assets/images/info.svg" alt="info"></a>
+            </div>
+            <div class="header__right-block-language">
+                <a class="russian-version" href="russianversion">рус</a>
+                <a class="english-version" href="englishnversion">eng</a>
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>
