@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Propshouse</title>
+</head>
+
+<body>
+    <!-- Шапка -->
+    <header class="header">
+        <nav class="navbar navbar-expand-sm navbar-expand-md">
+            <div class="container d-flex flex-row flex-nowrap">
+                <a class="navbar-brand" href="index.html">
+                    <img class="header__logo img-fluid d-inline-block align-top" src="assets/images/propshouse_logo.png"
+                        alt="logo">
+                </a>
+                <span class="navbar-text pb-0 text-right">
+                    Санкт-Петербург,<br>ул. Кронверкская, 21<br>
+                    <a class="navbar-text navbar-text_email mt-2" href="mailto:propshouse.spb@yandex.ru">
+                        propshouse.spb@yandex.ru
+                    </a><br>
+                    <a class="header_tel" href="tel:+79817520698">8 (981) 752-06-98</a>
+                </span>
+            </div>
+        </nav>
+        <nav class="mobile-menu">
+            <input type="checkbox" id="checkbox" class="mobile-menu__checkbox">
+            <label for="checkbox" class="mobile-menu__btn">
+                <div class="mobile-menu__icon"></div>
+            </label>
+            <div class="mobile-menu__container">
+                <ul class="mobile-menu__list">
+                    <li class="mobile-menu__item"><a href="index.html" class="mobile-menu__link">Главная</a></li>
+                    <li class="mobile-menu__item"><a href="catalog.html" class="mobile-menu__link">Каталог</a></li>
+                    <li class="mobile-menu__item"><a href="news.html" class="mobile-menu__link">Новости</a></li>
+                    <li class="mobile-menu__item"><a href="rent-terms.html" class="mobile-menu__link">Условия</a></li>
+                    <li class="mobile-menu__item"><a href="contacts.html" class="mobile-menu__link">Контакты</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container_great">
+        <!-- Меню -->
+        <aside class="aside">
+            <div class="container container_menu">
+                <div class="row row_1">
+                    <div class="col-8 menu_list">
+                        <a href="index.html" class="btn btn-info active_menu_item" role="button"
+                            aria-pressed="true">Главная</a>
+                        <a href="catalog.html" class="btn btn-info active_menu_item" role="button"
+                            aria-pressed="true">Каталог</a>
+                        <a href="news.html" class="btn btn-info active_menu_item" role="button"
+                            aria-pressed="true">Новости</a>
+                        <a href="rent-terms.html" class="btn btn-info active_menu_item" role="button"
+                            aria-pressed="true">Условия
+                            аренды</a>
+                        <a href="contacts.html" class="btn btn-info active_menu_item" role="button"
+                            aria-pressed="true">Контакты</a>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <!--Основной контент-->
+        <main class="main-page-container">
+            <div class="container d-flex justify-content-around">
+                <div class="row row-main-page-container">
+                    <div class="col">
+                        <div class="card card-main-page">
+                            <img class="card-img-top" src="assets/images/no-image.jpg" alt="Исторический реквизит">
+                            <div class="card-body">
+                                <h5 class="card-title">ИСТОРИЧЕСКИЙ РЕКВИЗИТ</h5>
+                                <!--<p class="card-text">Краткое описание/комментарий (XVIII, XIX век)</p>-->
+                                <a href="historical.html"
+                                    class="btn btn-primary btn-block catalog-page-button">Подробнее...</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card-main-page">
+                            <img class="card-img-top" src="assets/images/no-image.jpg" alt="Советский период">
+                            <div class="card-body">
+                                <h5 class="card-title">СОВЕТСКИЙ ПЕРИОД</h5>
+                                <!--<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
+                                <a href="sovietunion.html"
+                                    class="btn btn-primary btn-block catalog-page-button">Подробнее...</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card-main-page">
+                            <img class="card-img-top" src="assets/images/no-image.jpg" alt="Современный реквизит">
+                            <div class="card-body">
+                                <h5 class="card-title">СОВРЕМЕННЫЙ РЕКВИЗИТ</h5>
+                                <!--<p class="card-text">Краткое описание/комментарий</p>-->
+                                <a href="modern.html"
+                                    class="btn btn-primary btn-block catalog-page-button">Подробнее...</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        </main>
+    </div>
+    <!--Подвал-->
+    <footer class="footer d-flex flex-row justify-content-around align-items-center">
+        <div>
+            <a class="footer__text" href="index.html">PR<span class="footer__yellow-text">O</span>PS<span
+                    class="footer__blue-text">HOUSE</span></a>
+        </div>
+        <div class="d-flex flex-row justify-content-center">
+            <a class="btn fa fa-instagram footer__icons" href="https://www.instagram.com/propshouse.spb"></a>
+            <a class="btn fa fa-whatsapp footer__icons" href="https://wa.me/79817520698"></a>
+        </div>
+
+        <div>
+            <a class="footer__text" href="tel:+79817520698">8 (981) 752-06-98</a>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
