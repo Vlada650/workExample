@@ -3,6 +3,8 @@ Aдаптивный кроссбраузерный сайт по макету и
 
 Технологии: HTML5, CSS3, Figma, Scss
 
-![bookmark3](https://user-images.githubusercontent.com/77633382/139409027-f1b8f4ee-d762-4f78-89b4-1b0d7b24400b.png)
-![bookmark1](https://user-images.githubusercontent.com/77633382/139409017-bd2b962d-ae7a-4e6b-bc29-e165bfb59ece.png)
-![bookmark2](https://user-images.githubusercontent.com/77633382/139409024-e2af82d2-0f07-4fe3-9468-10569deedc04.png)
+![bookmark](https://user-images.githubusercontent.com/77633382/139409470-937183a4-1be6-4456-9edb-ff7d6684f33e.png)
+
+![bookmark0](https://user-images.githubusercontent.com/77633382/139409474-ca181999-4a78-4ba1-8b55-d0425ab4aee1.png)
+
+![bookmark01](https://user-images.githubusercontent.com/77633382/139409476-f9c391ae-0841-4c3b-b80f-cfce1b28bed2.png)
