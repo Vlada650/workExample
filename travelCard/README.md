@@ -2,7 +2,7 @@
 
  Страничка для сайта путешествий, на которой можно оставить данные о посещенных городах, своем маршруте и количестве пройденных шагов, а так же добавить фотографии из поездки
 
-Технологии: HTML5, CSS3, JavaScript(Vanilla, ES6)
+Технологии: HTML5, CSS3, JavaScript(Vanilla, ES6), LocalStorage
 
 ![travel1](https://user-images.githubusercontent.com/77633382/139413067-1968feeb-2c28-4dfa-b8c9-06fcaaa5fc71.png)
 
