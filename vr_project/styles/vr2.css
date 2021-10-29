@@ -1,0 +1,120 @@
+.row__nav__logo1,
+.row__nav__logo2 {
+	width: 30px;
+	height: 30px;
+	-moz-border-radius: 60px;
+	-webkit-border-radius: 60px;
+	border-radius: 60px;
+	opacity: 0.9;
+}
+
+.row__nav__logo1 {
+	margin-bottom: -30%;
+	background-color: #5222d0;
+}
+
+.row__nav__logo2 {
+	background-color: #ec615b;
+	margin-left: 30%;
+}
+
+.row__nav__logo3 {
+	margin-left: -35px;
+	font-weight: 800;
+	color: #000;
+	font-size: 20px;
+}
+
+.container {
+	padding-top: 2vw;
+}
+
+h1 {
+	margin: 2vw;
+	color: #000;
+	font-weight: 800;
+}
+
+.btn-1,
+.btn-2 {
+	margin-left: 15px;
+	border-radius: 50px;
+	border: none;
+	font-weight: 500;
+	font-size: 13px;
+	background-color: #5222d0;
+	color: white;
+	padding: 5px 15px;
+}
+
+.btn-1 {
+	margin-top: 10px;
+}
+
+.bg-1,
+.bg-2,
+.bg-3 {
+	width: 320px;
+	height: 233px;
+	margin-bottom: -230px;
+	background-color: #ec615b;
+}
+
+.card {
+	width: 20rem;
+}
+
+.card1 {
+	margin-top: 10px;
+	margin-bottom: -8px;
+}
+
+.card1,
+.card2,
+.card3 {
+	height: 15rem;
+}
+
+.card4,
+.card5 {
+	height: 12rem;
+}
+
+.form {
+	width: 20rem;
+	height: 11rem;
+	background-color: #ec615b;
+	padding-top: 10px;
+	margin-bottom: 2vw;
+}
+
+.form-control {
+	margin-left: 15px;
+	width: 18rem;
+}
+
+.title {
+	margin-left: 15px;
+	color: white;
+}
+
+.title,
+.card-title {
+	font-weight: 800;
+	font-size: 25px;
+}
+
+.card-title {
+	width: 300px;
+	color: black;
+}
+
+p,
+input[type="email"]::-webkit-input-placeholder {
+	color: black;
+}
+
+.col-1-auto {
+	padding-left: 40px;
+	font-size: 18px;
+}
