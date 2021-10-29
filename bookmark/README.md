@@ -7,4 +7,4 @@ Aдаптивный кроссбраузерный сайт по макету и
 
 ![bookmark0](https://user-images.githubusercontent.com/77633382/139409474-ca181999-4a78-4ba1-8b55-d0425ab4aee1.png)
 
-![bookmark01](https://user-images.githubusercontent.com/77633382/139409476-f9c391ae-0841-4c3b-b80f-cfce1b28bed2.png)
+![bookmark02](https://user-images.githubusercontent.com/77633382/139409768-3be3a577-82fd-476b-a506-dcef9deda56c.png)
