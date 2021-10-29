@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/number.css">
+    <link rel="shortcut icon" href="https://cdn-icons.flaticon.com/png/512/4002/premium/4002502.png?token=exp=1635505251~hmac=d98a48e192fee48248afc4102a213a4a" type="image/svg">
+    <title>Generate</title>
+</head>
+
+
+<body>
+    <div class="background">
+        <div class="main">
+            <p class="main__header">Генератор случайных чисел</p>
+            <span class="main__name">Генерируем 10 чисел: </span>
+            <div class="main__field" id="array"></div>
+            <span class="main__name">Максимальное число: </span>
+            <div class="main__field" id="max"></div>
+            <span class="main__name">Минимальное число: </span>
+            <div class="main__field" id="min"></div>
+            <span class="main__name">Среднее арифметическое: </span>
+            <div class="main__field" id="aver"></div>
+            <span class="main__name">Произведение чисел: </span>
+            <div class="main__field" id="mult"></div>
+            <span class="main__name">Сумма чисел:</span>
+            <div class="main__field" id="sum"> </div>
+            <button id="button" class="main__button" onclick="generateArr()">Start</button>
+        </div>
+
+        <script>
+            function generateSequence(min, max) {
+                return Math.floor(Math.random() * (max - min)) + min;
+            }
+
+            function generateArr() { /*generate array of numbers*/
+                let divs = document.getElementsByClassName("main__field");
+                for (let div of divs) {
+                    div.innerHTML = "";
+                }
+
+                let arrayNum = [];
+                for (let i = 0; i < 10; i++) {
+                    let randomNumber = generateSequence(-10, 10);
+                    arrayNum.push(randomNumber);
+                    document.getElementById("array").innerHTML += randomNumber + "; ";
+                }
+
+                document.getElementById("max").innerHTML += getMaxOfArray(arrayNum);
+                document.getElementById("min").innerHTML += getMinOfArray(arrayNum);
+                document.getElementById("aver").innerHTML += average(arrayNum);
+                document.getElementById("mult").innerHTML += mult(arrayNum);
+                document.getElementById("sum").innerHTML += sum(arrayNum);
+            }
+
+            function getMaxOfArray(array) { /*get max number*/
+                return Math.max.apply(null, array);
+            }
+
+            function getMinOfArray(array) { /*get min number*/
+                return Math.min.apply(null, array);
+            }
+
+            function average(arrayNum) { /*generate average number*/
+                averageNum = arrayNum.reduce((total, amount) => (total + amount)) / arrayNum.length;
+                return Math.floor(averageNum);
+            }
+
+            function mult(arrayNum) { /*multiplication result*/
+                return arrayNum.reduce((total, amount) => (total * amount));
+            }
+
+            function sum(arrayNum) { /*sum result*/
+                return arrayNum.reduce((total, amount) => (total + amount));
+            }
+        </script>
+</body>
+
+</html>

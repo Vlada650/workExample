@@ -1,0 +1,51 @@
+.background {
+	display: block;
+}
+
+.background::before {
+	content: "";
+	background: url(https://img5.goodfon.ru/wallpaper/nbig/b/d0/enshtein-nauka-shkolnaia-doska-formuly-fizika.jpg);
+	opacity: 0.5;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: -1;
+}
+
+.main {
+	display: grid;
+	align-content: center;
+	width: 35vw;
+	margin: 5vh auto 10vh auto;
+	padding: 5px 30px 5px 30px;
+	box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5), 0 10px 10px rgba(0, 0, 0, 0.5);
+	background-color: rgba(37, 66, 39, 0.932);
+	color: white;
+}
+
+.main__header {
+	justify-self: center;
+	margin-top: 20px;
+	font-size: 2em;
+	font-weight: 700;
+}
+
+.main__name {
+	padding: 5px 0px;
+	font-weight: 600;
+	font-size: large;
+}
+
+.main__field {
+	height: 1.5em;
+	padding: 5px;
+}
+
+.main__button {
+	margin: 20px 0px;
+	font-size: 1.5em;
+	color: rgb(37, 66, 39);
+	border-radius: 5px;
+}
