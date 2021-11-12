@@ -1,0 +1,16 @@
+.main {
+	padding: 2em;
+	background: $lightBackground;
+	overflow: auto;
+	width: 100%;
+}
+
+.main__container {
+	font-weight: bold;
+	padding: 10px;
+	background: rgb(130, 210, 224);
+	border: 1px solid $darkBackground;
+	width: 200px;
+	color: $darkBackground;
+	font-size: 20px;
+}

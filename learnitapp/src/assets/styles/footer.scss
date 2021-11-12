@@ -1,0 +1,18 @@
+.footer__promo {
+	font-size: 25px;
+	font-weight: bold;
+	color: $lightBackground;
+}
+
+.footer {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+	border-top: 1px solid $inputColor;
+	background-color: $darkBackground;
+}
+
+.footer__logo {
+	height: 30px;
+	width: 110px;
+}

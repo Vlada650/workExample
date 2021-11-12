@@ -1,0 +1,53 @@
+.newword-form {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	margin-top: 60px;
+	flex-direction: column;
+	background-color: $lightBackground;
+}
+
+.newword-promo {
+	font-size: 24px;
+	font-weight: 800;
+	padding: 25px 0px 10px;
+	color: $darkBackground;
+}
+
+.newword-table {
+	display: flex;
+	align-items: center;
+	border-radius: 50px;
+	background-color: $darkBackground;
+	padding: 0px 10px;
+	margin: 5px;
+}
+
+.addtable__text {
+	color: $inputColor;
+	width: 200px;
+	font-size: 18px;
+	height: 45px;
+	margin-left: 10px;
+}
+
+.addtable__button {
+	margin: 10px;
+	height: 45px;
+}
+
+.addtable__button-btn {
+	border: 1px solid $inputColor;
+	padding: 6px;
+	color: $darkBackground;
+	background: $accentColor;
+	border-radius: 15px;
+	margin: 0px 3px;
+	width: 70px;
+	cursor: pointer;
+	font-weight: 800;
+}
+
+.errorinput {
+	border: 2px solid $errorColor;
+}

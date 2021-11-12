@@ -1,0 +1,32 @@
+.error-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100vh;
+	background-color: $lightBackground;
+}
+
+.error-container__message {
+	text-align: center;
+	font-size: 28px;
+	font-weight: 700;
+	color: $darkBackground;
+}
+
+.error-container__message_link {
+	text-align: center;
+	font-size: 24px;
+	font-weight: 700;
+	text-decoration: none;
+	color: $darkBackground;
+
+	&:hover {
+		text-decoration: underline;
+		color: $accentColor;
+	}
+}
+
+a {
+	color: $darkBackground;
+}

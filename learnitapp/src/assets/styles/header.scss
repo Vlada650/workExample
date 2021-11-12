@@ -1,0 +1,37 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+	background-color: $darkBackground;
+	border-bottom: 1px solid $inputColor;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.header__promo {
+	font-size: 25px;
+	font-weight: 800;
+	color: $lightBackground;
+}
+
+.header__button {
+	border: 1px solid $inputColor;
+	color: $darkBackground;
+	border-radius: 5px;
+	padding: 5px 10px;
+	background-color: $accentColor;
+	font-weight: 600;
+	line-height: 30px;
+	cursor: pointer;
+	margin-right: 20px;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.header__logo {
+	height: 30px;
+	width: 110px;
+}

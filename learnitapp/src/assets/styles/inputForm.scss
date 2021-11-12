@@ -1,0 +1,40 @@
+input {
+	width: 150px;
+	text-align: center;
+	border: 2px solid rgb(128, 125, 126);
+	-webkit-border-radius: 5px 5px 5px 5px;
+	border-radius: 5px 5px 5px 5px;
+	padding: 2px;
+}
+.table__text {
+	padding: 15px;
+	background: $darkBackground;
+	color: $lightBackground;
+	width: 200px;
+	font-size: 18px;
+	font-weight: 600;
+	height: 35px;
+}
+
+.table__button {
+	padding: 10px;
+	background: $darkBackground;
+	width: 200px;
+	margin: 10px;
+}
+
+.table__button-btn {
+	border: 1px solid $inputColor;
+	padding: 6px;
+	color: $darkBackground;
+	background: $accentColor;
+	border-radius: 15px;
+	margin: 0px 15px;
+	width: 70px;
+	cursor: pointer;
+	font-weight: 800;
+}
+
+.errorinput {
+	border: 2px solid $errorColor;
+}
