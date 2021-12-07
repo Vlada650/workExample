@@ -1,4 +1,4 @@
-# Site for shop of VR-glasses
+# Site for online-store of VR-glasses
 
 Верстка сайта для продажи VR очков от компании Виарушка по макету из Figma
 
