@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Watch</title>
-    <link rel="stylesheet" href="./assets/styles/stylefigma.css">
     <link rel="stylesheet" href="./assets/styles/normalize.css">
+    <link rel="stylesheet" href="./assets/styles/Honor-watch.css">
     <link rel="stylesheet" href="./assets/fonts/PT_Serif/PTSerif-Regular.ttf">
     <link rel="stylesheet" href="./assets/fonts/Alegreya/Alegreya-VariableFont_wght.ttf">
     <link rel="stylesheet" href="./assets/fonts/Playfair_Display/PlayfairDisplay-Regular.ttf">
@@ -16,28 +16,44 @@
 
 <body class="container">
     <header class="header">
-        <img class="logo" src="./assets/images/logo.png" alt="Logotype">
-        <a href="https://www.hihonor.com/global/">Home</a>
-        <a href="https://www.hihonor.com/global/products/smartphone/honor-10x-lite/">Smartphones</a>
-        <a href="https://www.hihonor.com/global/products/laptop/honor-magicbook-pro/">Laptops</a>
-        <a class="menu" href="https://www.hihonor.com/global/products/wearables/honor-watch-es/?buynow">Buy Now</a>
+        <img class="header__logo" src="./assets/images/logo.png" alt="Logotype">
+        <a class="header__menu" href="https://www.hihonor.com/global/">Home</a>
+        <a class="header__menu"
+            href="https://www.hihonor.com/global/products/smartphone/honor-10x-lite/">Smartphones</a>
+        <a class="header__menu" href="https://www.hihonor.com/global/products/laptop/honor-magicbook-pro/">Laptops</a>
+        <a class="header__menu_buy" href="https://www.hihonor.com/global/products/wearables/honor-watch-es/?buynow">Buy
+            Now</a>
     </header>
     <main>
-        <section class="section1">
-            <h1 class="h1">Smartwatch</h1>
-            <h2 class="h2">ELEMENT SERIE</h2>
-            <p class="slogan">"For the brave" for a youth audience that follows the latest technological trends</p>
+        <section class="info">
+            <h1 class="info__brand">Smartwatch</h1>
+            <h2 class="info__series">Element series</h2>
+            <p class="info__tagline">"For the brave" for a youth audience that follows the latest technological trends
+            </p>
         </section>
-        <section class="section2">
-            <div class="watch1"><span id="title">Pink</span><br><span id="title2">Element</span><img id="catalog"
-                    src="./assets/images/watch.png" alt="Watch1"></div>
-            <div class="watch2"><span id="title">White</span><br><span id="title2">Element</span><img id="catalog"
-                    src="./assets/images/watchlight.png" alt="Watch2"></div>
-            <div class="watch3"><span id="title">Dark</span><br><span id="title2">Element</span><img id="catalog"
-                    src="./assets/images/watchdark.png" alt="Watch3"></div>
+        <section class="product">
+            <div class="product__item">
+                <span class="product__title">Pink</span>
+                <br><span class="product__element">Element</span>
+                <img class="product__img" src="./assets/images/watch.png" alt="Watch-pink">
+            </div>
+            <div class="product__item">
+                <span class="product__title">White</span>
+                <br><span class="product__element">Element</span>
+                <img class="product__img" src="./assets/images/watchlight.png" alt="Watch-white">
+            </div>
+            <div class="product__item">
+                <span class="product__title">Dark</span>
+                <br><span class="product__element">Element</span>
+                <img class="product__img" src="./assets/images/watchdark.png" alt="Watch-dark">
+            </div>
         </section>
     </main>
-    <aside><img src="./assets/images/watch.png" alt="Watch example" class="bigwatch"></aside>
+    <aside>
+        <div class="example">
+            <img src="./assets/images/watch.png" alt="Watch example" class="example__img">
+        </div>
+    </aside>
 
 </body>
 

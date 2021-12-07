@@ -4,6 +4,7 @@
     grid-template-columns: 2fr 1fr ;
     height: 98vh;
     background-color: #10052e;
+    color: white;
 }
 
 .header {
@@ -17,24 +18,31 @@
     margin-top: 25px;
 }
 
-.logo {
+.header__logo {
     width: 140px;
     height: 30px;
     margin-left: 600px;
 }
 
-.menu {
+.header__menu {
+    color: white;
+    text-decoration: none;
+}
+
+.header__menu:hover {
+    text-decoration: underline;
+}
+
+.header__menu_buy {
     width: 100px;
     padding-top: 5px;
     padding-bottom: 5px;
     background-color: #F29494;
-}
-
-.section1, .section2 {
     color: white;
+    text-decoration: none;
 }
 
-.h1 {
+.info__brand{
     position: relative;
     width: 500px;
     left: 100px;
@@ -44,7 +52,7 @@
     font-weight: 800;
 }
 
-.h2 {
+.info__series {
     position: relative;
     width: 300px;
     left: 100px;
@@ -52,9 +60,10 @@
     font-size: 30px;
     font-weight: 400;
     color: #EF9C9C;
+    text-transform: uppercase;
 }
 
-.slogan{
+.info__tagline{
     position: relative;
     width: 430px;
     left: 100px;
@@ -63,32 +72,33 @@
     font-weight: 400;
 }
 
-.section2 {
+.product {
     display: grid;
     grid-template-columns: 0.5fr 0.5fr 0.5fr;
     margin-top: 100px;
+    padding: 0px 50px;
 }
 
-#title {
+.product__title {
     margin-bottom: 10px;
     font-family: serif;
     font-size: 25px;
     font-weight: 800;
 }
 
-#title2 {
+.product__element {
     padding-left: 35px;
     font-size: 15px;
     font-weight: 100;
 }
 
-#catalog {
+.product__img{
     width: 130px;
     height: 150px;
     margin-top: 10px;
 }
 
-.watch1, .watch2, .watch3 {
+.product__item {
     height: 220px;
     width: 190px;
     padding-top: 5px;
@@ -97,26 +107,11 @@
     background-color: #2B3544;
 }
 
-.watch1 {
-    margin-left: 40px;
-}
-
-.watch3 {
-    margin-left: -40px;
-}
-
-.bigwatch {
+.example__img {
     width: 400px;
-    height: 500px;
-    margin-top: 50px;
-    margin-right: 150px;
+    height: 500px; 
 }
 
-a {
-    color: white;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
+.example{
+    margin: 50px auto;
 }
