@@ -7,41 +7,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VR1</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/commonStyles.css">
     <link rel="stylesheet" href="./styles/vr1.css">
     <link rel="stylesheet" href="normalize.css">
 </head>
 
 <body class="container">
-    <div class="row row__nav">
+    <div class="row header">
         <div class="col-1">
-            <div class="row__nav__logo1"></div>
-            <div class="row__nav__logo2"></div>
+            <div class="header__circle-violet"></div>
+            <div class="header__circle-red"></div>
         </div>
-        <div class="col-1 row__nav__logo3">ВИАРУШКА</div>
+        <div class="col-1"><a href="VR2.html" class="header__name">Виарушка</a></div>
         <div class="col-9 d-flex justify-content-end">
-            <div class="col-1 row__nav__basket">
-                <button type="button" class="btn-1">КОРЗИНА</button>
+            <div class="col-1">
+                <button type="button" class="button header__btn">Корзина</button>
             </div>
         </div>
     </div>
     <div class="row">
-        <div class="col-5">
-            <h1>Виртуальная реальность без проводов</h1>
-            <p>Лучшее, что случалось с виртуальным миром в реальности. Новый компактный шлем без проводов и дорогих
-                комьютеров.
+        <div class="col-5 info">
+            <h1 class="info__header">Виртуальная реальность без проводов</h1>
+            <p class="info__promo">Лучшее, что случалось с виртуальным миром в реальности. Новый компактный шлем без
+                проводов и дорогих комьютеров
             </p>
-            <button type="button" class="btn-2">КУПИТЬ</button>
-            <div class="row">
-                <div class="col-1-auto">Возможности</div>
-                <div class="col-1-auto">Где купить</div>
-                <div class="col-1-auto"> Доставка</div>
-                <div class="col-1-auto"> Помощь</div>
-            </div>
+            <button type="button" class="button info__btn">Купить</button>
         </div>
         <div class="col-7">
             <img src="assets/background.png" class="background" alt="Background">
             <img src="assets/guy.png" class="guy" alt="Man with VR glasses">
         </div>
+        <footer class="row footer">
+            <div class="col-1-auto"><a href="#" class="footer__menu">Возможности</a></div>
+            <div class="col-1-auto"><a href="#" class="footer__menu">Где купить</a></div>
+            <div class="col-1-auto"><a href="#" class="footer__menu">Доставка</a></div>
+            <div class="col-1-auto"><a href="#" class="footer__menu">Помощь</a></div>
+        </footer>
     </div>
 
 </body>

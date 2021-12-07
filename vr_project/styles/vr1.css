@@ -1,86 +1,35 @@
-.row__nav__logo1,
-        .row__nav__logo2 {
-            width: 30px;
-            height: 30px;
-            -moz-border-radius: 60px;
-            -webkit-border-radius: 60px;
-            border-radius: 60px;
-            opacity: 0.9;
-        }
+.info__header{
+    font-weight: 700;
+    font-size: 50px;
+}
 
-        .row__nav__logo1 {
-            margin-bottom: -30%;
-            background-color: #5222D0;
-        }
+.info__header,
+.info__promo {
+    margin: 2vw;
+    color: #000;
+}
 
-        .row__nav__logo2 {
-            background-color: #EC615B;
-            margin-left: 30%;
-        }
+.info__promo {
+    font-size: 18px;
+}
 
-        .row__nav__logo3 {
-            margin-left: -35px;
-            font-weight: 800;
-            font-size: 25px;
-            color: #000;
-        }
+.info__btn {
+    padding: 5px 25px;
+    font-size: 25px;
+    font-weight: 600;
+}
 
-        .btn-1 {
-            border-radius: 50px;
-            padding: 5px 15px;
-            margin-top: 10px;
-            margin-left: 15px;
-            border: none;
-            font-weight: 500;
-            font-size: 15px;
-            background-color: #5222D0;
-            color: white;
-        }
+.footer{
+    position: relative;
+    top: -7vh;
+}
 
-        .btn-2 {
-            border-radius: 50px;
-            padding: 5px 25px;
-            margin-left: 15px;
-            border: none;
-            font-size: 25px;
-            font-weight: 600;
-            background-color: #5222D0;
-            color: white;
-        }
+.background {
+    width: 750px;
+    height: 600px;
+}
 
-        .container,
-        .row {
-            padding-top: 1vw;
-        }
-
-        h1 {
-            font-weight: 700;
-            font-size: 50px;
-        }
-
-        h1,
-        p {
-            margin: 2vw;
-            color: #000;
-        }
-
-        p,
-        .col-1-auto {
-            font-size: 18px;
-        }
-
-        .col-1-auto {
-            padding-left: 30px;
-            margin-top: 15rem;
-            color: #5222D0;
-        }
-
-        .background {
-            width: 750px;
-            height: 600px;
-        }
-
-        .guy {
-            margin-top: -590px;
-            margin-left: 40px;
-        }
+.guy {
+    margin-top: -590px;
+    margin-left: 40px;
+}
